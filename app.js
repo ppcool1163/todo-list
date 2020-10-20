@@ -12,8 +12,7 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(express.static('public'))
 
-mongoose.connect('mongodb+srv://admin-ppcool:pppmsdmnu@ppcool-z80gk.mongodb.net/todolistDB?retryWrites=true&w=majority')
-// mongoose.connect('mongodb://localhost:27017/todolistDB');
+mongoose.connect('mongodb://localhost:27017/todolistDB');
 
 const itemsSchema = {
   name: {
